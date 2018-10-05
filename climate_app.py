@@ -43,10 +43,12 @@ app = Flask(__name__)
 def welcome():
     return """
     Welcome to the Hawaii Climate API!
-    Available endpoints:
-    /api/v1.0/precipitation\n
-    /api/v1.0/stations\n
-    /api/v1.0/tobs\n
+    Available endpoints: <br>
+    /api/v1.0/precipitation <br>
+    /api/v1.0/stations <br>
+    /api/v1.0/tobs <br>
+    /api/v1.0/&lt;start&gt; where start is a date in YYYY-MM-DD format <br> 
+    /api/v1.0/&lt;start&gt;/&lt;end&gt; where start and end are dates in YYYY-MM-DD format
     """
 
 @app.route("/api/v1.0/precipitation")
